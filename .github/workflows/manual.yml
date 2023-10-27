@@ -57,14 +57,14 @@ jobs:
           windows-icon-from-ico: assets/WLEDAudioSync30.ico
           macos-app-icon: assets/WLEDAudioSync30.ico
           onefile: true
-          output-file: WLEDAudioSyncRTMCast-${{runner.os}}
+          output-file: WLEDAudioSyncMCast-${{runner.os}}
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v3
         with:
           name: ${{runner.os}} Build
           if-no-files-found: warn
-          path: 'build/WLEDAudioSyncRTMCast-${{runner.os}}**'
+          path: 'build/WLEDAudioSyncMCast-${{runner.os}}**'
             
       - name: Create Release ${{github.event.inputs.mytag}} with Builds from Nuitka
         uses: ncipollo/release-action@v1
@@ -72,5 +72,5 @@ jobs:
           allowUpdates: true
           commit: main
           tag: ${{github.event.inputs.mytag}}
-          artifacts: 'build/WLEDAudioSyncRTMCast-${{runner.os}}**'
+          artifacts: 'build/WLEDAudioSyncMCast-${{runner.os}}**'
           
