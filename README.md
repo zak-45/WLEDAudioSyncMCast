@@ -15,3 +15,5 @@ Windows example :
 ```
 WLEDAudioSyncMCast-Windows.exe  --ip 192.168.1.12 --group 239.0.0.1 --port 19890
 ```
+
+![image](https://github.com/zak-45/WLEDAudioSyncMCast/assets/121941293/ce07af59-82d8-4f20-bb2a-5e640ea47957)
