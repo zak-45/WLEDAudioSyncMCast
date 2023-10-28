@@ -24,3 +24,46 @@ the IP address need to be the one of your active LAN interface otherwise you wil
 ```
 OSError: [WinError 10049] Not valid address on this context
 ```
+
+To check Multicast on Linux :
+
+$**netstat --groups**
+```
+IPv6/IPv4 Group Memberships
+Interface       RefCnt Group
+--------------- ------ ---------------------
+lo              1      all-systems.mcast.net
+eth0            1      all-systems.mcast.net
+```
+
+on Win :
+
+C:\\>**netsh interface ip show joins**
+```
+
+
+Interface 1 : Loopback Pseudo-Interface 1
+
+Étendue     Références  Dern  Adresse
+----------  ----------  ----  ---------------------------------
+0                    0  Oui   224.0.0.251
+0                    3  Oui   239.255.255.250
+
+Interface 20 : Wi-Fi
+
+Étendue     Références  Dern  Adresse
+----------  ----------  ----  ---------------------------------
+0                    0  Non   224.0.0.1
+0                    1  Oui   224.0.0.251
+0                    1  Oui   224.0.0.252
+0                    0  Oui   239.0.0.1
+0                    1  Oui   239.255.102.18
+0                    2  Oui   239.255.255.250
+
+Interface 11 : Ethernet
+
+Étendue     Références  Dern  Adresse
+----------  ----------  ----  ---------------------------------
+0                    0  Oui   224.0.0.1
+```
+
