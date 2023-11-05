@@ -20,6 +20,14 @@ _options_
 
 ## Info
 
+```
+First time you run WLEDAudioSyncMCast-{OS},
+this will create folder ./WLEDAudioSyncMCast and extract all files on it.
+
+To save some space and time,
+you can then delete WLEDAudioSyncMCast-* and run the app from created folder.
+```
+
 the IP address need to be the one of your active LAN interface otherwise you will get an error like :
 ```
 OSError: [WinError 10049] Not valid address on this context
